@@ -1,0 +1,22 @@
+site_name: De Stichting - Het Handboek
+
+
+
+
+theme:
+  name: material
+  palette:
+    primary: black
+    accent: blue
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - toc.integrate
+
