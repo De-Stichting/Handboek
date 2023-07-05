@@ -1,6 +1,12 @@
 site_name: De Stichting - Het Handboek
 
-
+nav:
+  - index.md
+  - Techniek: tech/
+  - Organisatie: org/
+  - Development:
+    - dev/index.md
+    - Markdown: dev/markdown.md
 
 
 theme:
@@ -14,9 +20,35 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.expand
-    - navigation.path
     - navigation.indexes
     - navigation.top
     - toc.follow
     - toc.integrate
+  custom_dir: site
+
+extra_css:
+  - assets/main.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - offline
+
+extra:
+  consent:
+    title: Me want cookie!
+    description: >-
+      Cookie Monster eet heel veel cookies. En dat doet deze website ook. 
+      Hopelijk vind je dat oké. We gebruiken enkel de meest noodzakelijke
+      cookies om deze site te laden.
+    actions:
+      - accept
+      - reject
 
